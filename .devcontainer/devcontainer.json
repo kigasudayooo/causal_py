@@ -1,8 +1,8 @@
 {
-    "name": "Python VScode",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
+    "name": "causal inference with python",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
     "dockerComposeFile": "docker-compose.yml",  // docker-conpose.ymlファイルを指定
     "service": "python",                        // docker-conpose.ymlファイル内に記載したサービス名を指定
-    "workspaceFolder": "/python_econometrics/src",         // VScode接続時に開くフォルダを指定
+    "workspaceFolder": "/causal_py/src",         // VScode接続時に開くフォルダを指定
     "customizations": {
         "vscode": {
             "extensions": [                     // コンテナ作成時にインストールする拡張機能を記載　
@@ -23,8 +23,8 @@
                 "mechatroner.rainbow-csv",
 
                 // git related
-                "donjayamanne.githistory",
-                "eamodio.gitlens",
+                //"donjayamanne.githistory",
+                //"eamodio.gitlens",
 
                 // markdown related
                 "yzhang.markdown-all-in-one",
