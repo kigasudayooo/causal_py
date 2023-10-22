@@ -1,0 +1,15 @@
+services:                           # サービスを定義しますという決まり文句
+  python:                           # pythonという名前でサービスを定義
+    image: python:test             # イメージのREPOSITORY名:TAG名を指定
+    build: .                        # Dockerfileを相対パスで指定
+    container_name: python_econometrics    # 作成されるコンテナ名を指定
+    working_dir: /python_econometrics/src     # 作業ディレクトリを指定
+    volumes:      
+    #long syntax の方が誤解がなくてよい。
+    #(https://zenn.dev/ajapa/articles/1369a3c0e8085d)
+
+                      # マウントするファイルを指定する
+      - type: bind
+        source: ../src
+        target: /python_econometrics/src       # ローカルPCのsrc:コンテナのworkspace/src
+    tty: true                       # コンテナを起動し続ける

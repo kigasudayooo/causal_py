@@ -1,0 +1,48 @@
+{
+    "name": "Python VScode",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
+    "dockerComposeFile": "docker-compose.yml",  // docker-conpose.ymlファイルを指定
+    "service": "python",                        // docker-conpose.ymlファイル内に記載したサービス名を指定
+    "workspaceFolder": "/python_econometrics/src",         // VScode接続時に開くフォルダを指定
+    "customizations": {
+        "vscode": {
+            "extensions": [                     // コンテナ作成時にインストールする拡張機能を記載　
+                
+                "ms-python.python",            
+                "ms-toolsai.jupyter",          
+                
+                // these extentions are based on the HP below.
+                // Visual Studio Codeを使うなら絶対に入れておきたい拡張機能
+                
+                "GitHub.copilot",
+                "MS-CEINTL.vscode-language-pack-ja",
+                "vscode-icons-team.vscode-icons",
+                "streetsidesoftware.code-spell-checker",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "oderwat.indent-rainbow",
+                "mechatroner.rainbow-csv",
+
+                // git related
+                "donjayamanne.githistory",
+                "eamodio.gitlens",
+
+                // markdown related
+                "yzhang.markdown-all-in-one",
+                "yzane.markdown-pdf",
+                "DavidAnson.vscode-markdownlint",
+                "marp-team.marp-vscode",
+                "shd101wyy.markdown-preview-enhanced"
+                
+                
+                
+                
+                
+                
+                
+            ],
+            "settings": {                       // VScodeの設定を記載
+                "files.autoSave": "afterDelay"  // ファイルのオートセーブ
+            }
+        }
+    }
+}
