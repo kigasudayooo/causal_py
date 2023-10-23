@@ -2,6 +2,7 @@
 
 ## 参考資料集
 - [EconML](https://econml.azurewebsites.net/index.html)
+- [EconMLのサンプルコード](https://github.com/py-why/EconML/tree/main/notebooks)
 - [EconMLパッケージの紹介 (meta-learners編)](https://usaito.hatenablog.com/entry/2019/04/07/205756)
 - [機械学習で因果推論~Meta-LearnerとEconML~](https://zenn.dev/s1ok69oo/articles/1eeebe75842a50)
 - [CATEを推定するMeta-Learnersの特徴と比較](https://saltcooky.hatenablog.com/entry/2020/08/16/003950)
