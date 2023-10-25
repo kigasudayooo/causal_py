@@ -17,6 +17,7 @@ pygraphviz
 econml
 
 #causalml
+doubleml
 
 pymc3
 
