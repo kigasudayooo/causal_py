@@ -1,6 +1,11 @@
-# EconMLについて
+# 機械学習による因果推論について
 
-## 参考資料集
+## EconMLとは
+- EconMLは、Microsoft Researchが開発した因果推論のためのPythonパッケージ
+- Heterogeneous Treatment Effect Estimation(異質処置効果推定)を行うことができる
+
+
+ ### 参考資料集
 - [EconML](https://econml.azurewebsites.net/index.html)
 - [EconMLのサンプルコード](https://github.com/py-why/EconML/tree/main/notebooks)
 - [EconMLパッケージの紹介 (meta-learners編)](https://usaito.hatenablog.com/entry/2019/04/07/205756)
@@ -13,9 +18,6 @@
 - [BART: Bayesian additive regression treesによる因果推論](https://tmitani-tky.hatenablog.com/entry/2019/11/14/014056)
 
 
-## EconMLとは
-- EconMLは、Microsoft Researchが開発した因果推論のためのPythonパッケージ
-- Heterogeneous Treatment Effect Estimation(異質処置効果推定)を行うことができる
 
 ### Meta-Learners
 - EconMLにおける異質処置効果推定の手法
@@ -106,3 +108,10 @@ N(0,ρ)$というm個の木による加法的予測モデル（これを森と�
 
 ![シミュレーションの設定](https://cdn-ak.f.st-hatena.com/images/fotolife/s/saltcooky/20200815/20200815162631.png)
 ![シミュレーションの結果](https://cdn-ak.f.st-hatena.com/images/fotolife/s/saltcooky/20200815/20200815011615.png)
+
+## Double/Debiased Machine Learningについて
+
+### 参考資料
+- [Double/Debiased Machine Learning for Treatment and Structural Parameters](https://arxiv.org/abs/1608.00060)
+
+### 概要
