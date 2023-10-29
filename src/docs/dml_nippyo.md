@@ -1,8 +1,7 @@
 # 機械学習×計量経済学：Double/Debiased Machine Learning
 - [source](https://www.web-nippyo.jp/13331/)
-Chernozhukov, Victor, Denis Chetverikov, Mert Demirer, Esther Duflo, Christian Hansen, Whitney Newey, and James Robins (2018a). “Double/Debiased Machine Learning for Treatment and Structural Parameters”, Econometrics Journal, 21, pp.C1–C68.
+- [Chernozhukov, Victor, Denis Chetverikov, Mert Demirer, Esther Duflo, Christian Hansen, Whitney Newey, and James Robins (2018a). “Double/Debiased Machine Learning for Treatment and Structural Parameters”, Econometrics Journal, 21, pp.C1–C68.](https://academic.oup.com/ectj/article/21/1/C1/5056401)
 
-矢田紘平
 
 ## 機械学習と計量経済学
 本稿では、計量経済学モデルの推定に機械学習の手法を応用する方法を提案した論文Chernozhukov et al.(2018a)を紹介する。ここでは、機械学習をLASSO、ランダムフォレスト、勾配ブースティング、ニューラルネットワーク等に代表される「予測・分類アルゴリズム」と捉えて議論する(厳密に「機械学習」とは何かを定義するのは、かなりハードな問題である)。
