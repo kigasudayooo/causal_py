@@ -27,6 +27,8 @@
     - [モチベーション](#モチベーション)
     - [概要](#概要)
       - [PartitioningとTree推定量](#partitioningとtree推定量)
+    - [諸々略](#諸々略)
+    - [Generalized Random Forest](#generalized-random-forest)
 
 
 ## EconMLとは
@@ -196,6 +198,8 @@ DMLのもう1つの特徴は、データ分割を行い、$\eta_0$の推定と$\
 - [ランダムフォレストによる因果推論と最近の展開](https://speakerdeck.com/tomoshige_n/randamuhuoresutoniyoruyin-guo-tui-lun-tozui-jin-nozhan-kai-838c3989-570d-49ca-b630-22044a798589)
 
 #### そもそもランダムフォレストとは 
+- ランダムフォレストは, パラメータの識別ではなく, 変数$x$に対して目的変数$y$の予測値$\hat y$を求めるためのアルゴリズムである. よって, 予測値$\hat y$がどれだけ$y$を正確に予測するかが課題であり, パラメータをバイアスなく推定するといったことは必ずしも要求されない. これはランダムフォレストに限らず, 機械学習全般に当てはまる.([source](https://ill-identified.hatenablog.com/entry/2018/08/02/004625))
+
 - [wiki](https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88)
 - アルゴリズム
   * 学習
@@ -263,3 +267,8 @@ $$
 - honest性を持つcausal tree の当てはめは、**(i) Leaf 間での処置効果の差の最大化**、および **(ii) 分割によって上昇する処置群と対照群の結果変数の分散の最小化**、の2つのトレードオフの最適化となる。 
 - 因果効果は 2 つの潜在結果変数の差として定義される。そのため因果効果の異質性が分割によって上昇することと、leaf 間の処置群と対照群の分散が小さくなることは、regression の場合のように比例関係があるわけではない。 
 - 罰則の意味が、regression の場合と causal inference では異なってくる点に注意が必要である。
+
+### 諸々略
+
+### Generalized Random Forest
+まとめると[「個別効果の異質性 (heterogeneity) のある因果推論モデルのパラメータ (異質的処置効果: Heterogeneous Treatment Effect) を推定するために, モデルの誤差を基準にした Ramdom Forest で個体をクラスタリングし, 得られた推定クラスタをもとに一般化モーメント法 (GMM) を 局所回帰してパラメータを識別するアルゴリズム」](https://ill-identified.hatenablog.com/entry/2018/08/02/004625)のこと。
