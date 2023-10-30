@@ -111,7 +111,8 @@ $$
 $$
 \sum_{i=1}^{n} [(Y_i - m(X_i)) - (T_i - \pi(X_i)) \tau(X_i)]^2 + \varLambda_n(\tau(\cdot)) \\
 $$
-- 実務上は$m(X_i)$及び$g(X_i)$は道なので、観測データから推計する。手法を提案した研究では、$m(X_i)$及び$g(X_i)$の推定と$\tau(X_i)$の推定は、それぞれ元のデータセットを分割した、別々のデータセットを用いて行うことを提案している(cross-fitting)。
+- 実務上は$m(X_i)$及び$g(X_i)$は未知なので、観測データから推計する。手法を提案した研究では、$m(X_i)$及び$g(X_i)$の推定と$\tau(X_i)$の推定は、それぞれ元のデータセットを分割した、別々のデータセットを用いて行うことを提案している(cross-fitting)。
+- よく見ると$Y_i - m(X_i)$は残差だし、$T_i - g(X_i)$も傾向スコアで介入のバイナリを説明した残差。介入変数の残差を説明変数との交差項にすることで、CATEを考えており、これはDMLの一つでは？
 
 #### その他の手法
 - DA-Learner (Domain Adaptation Learner)
@@ -141,6 +142,10 @@ N(0,ρ)$というm個の木による加法的予測モデル（これを森と�
 ![シミュレーションの結果](https://cdn-ak.f.st-hatena.com/images/fotolife/s/saltcooky/20200815/20200815011615.png)
 
 ## Double/Debiased Machine Learningについて
+
+- 要するに、FWL定理みたく、関心のある介入と目的変数を、その他の変数で回帰してそれぞれの残差で回帰みたいな話。
+- 目的変数のモデルのオーバーフィッティングは、残差を小さくして介入の効果を過少にするバイアスがかかり、介入の変数のオーバーフィッティングは介入のvarianceを小さくするので、効果が大きくなるバイアスが生じる。
+- 
 
 ### 参考資料
 - [Double/Debiased Machine Learning for Treatment and Structural Parameters](https://arxiv.org/abs/1608.00060)

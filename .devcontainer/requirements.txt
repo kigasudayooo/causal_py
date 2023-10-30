@@ -24,7 +24,12 @@ cvxpy
 graphviz
 causalinference
 
+#for parquet
+pyarrow
+fastparquet
 
 pymc3
+
+joblib
 
 jupyter
