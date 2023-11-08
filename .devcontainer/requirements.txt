@@ -32,4 +32,7 @@ pymc3
 
 joblib
 
+xgboost
+imblearn
+
 jupyter
