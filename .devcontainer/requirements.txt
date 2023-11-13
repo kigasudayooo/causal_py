@@ -13,6 +13,8 @@ ydata-profiling
 lightgbm==4.0.0
 optuna
 
+polars
+
 dowhy
 pygraphviz
 econml
